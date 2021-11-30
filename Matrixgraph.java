@@ -1,5 +1,5 @@
 import java.util.*;
-public class Matrixgraph<T>{
+public class Matrixgraph<T> implements GraphInterface<T>{
     private boolean edges[][];
     private T labels[];
     public Matrixgraph(int n){
@@ -48,7 +48,7 @@ public class Matrixgraph<T>{
             labels[i] = names[i];
         }
     }
-    public Queue<T> depthFirst(int origin){
+    public void depthFirst(int origin){
         Queue<T> order = new LinkedList<T>();
         Stack<Integer> vertexStack = new Stack<>();
         vertexStack.push(origin);
@@ -68,10 +68,9 @@ public class Matrixgraph<T>{
         while(!order.isEmpty()){
             System.out.print(order.remove() + ", ");
         }
-        return order;
     }
     
-    public Queue<T> breadthFirst(int origin){
+    public void breadthFirst(int origin){
         //holds traversal order
         Queue<T> order = new LinkedList<T>();
         Queue<Integer> vertexQueue = new LinkedList<Integer>();
@@ -91,6 +90,5 @@ public class Matrixgraph<T>{
         while(!order.isEmpty()){
             System.out.print(order.remove() + ", ");
         }
-        return order;
     }
 }
