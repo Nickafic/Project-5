@@ -4,13 +4,16 @@ Group Members: Nicholas Nguyen, Brianne Guerrero, George Francis
 
 Contributions:
 
-Nicholas Nguyen -
+Nicholas Nguyen - Breadth First and Depth First
 
-Brianne Buerrero -
+Brianne Buerrero - Graph Interface
 
 George Francis - 
 
 ___________________________________________________________________________________________
+Extras:
+
+Included generics and interface 
 
 Screen Cast:
 
