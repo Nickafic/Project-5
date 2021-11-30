@@ -46,9 +46,6 @@ public class Matrixgraph<T>{
     public void createGraph(T[] names){
         for(int i=0; i<names.length; i++){
             labels[i] = names[i];
-            for(int j=0; j<names.length; j++){
-                edges[i][j] = false;
-            }
         }
     }
     public Queue<T> depthFirst(int origin){
@@ -69,7 +66,7 @@ public class Matrixgraph<T>{
             vertexStack.pop();
         }
         while(!order.isEmpty()){
-            System.out.println(order.remove());
+            System.out.print(order.remove() + ", ");
         }
         return order;
     }
@@ -92,7 +89,7 @@ public class Matrixgraph<T>{
             }
         }
         while(!order.isEmpty()){
-            System.out.println(order.remove());
+            System.out.print(order.remove() + ", ");
         }
         return order;
     }

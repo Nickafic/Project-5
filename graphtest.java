@@ -16,6 +16,9 @@ public class graphtest {
         testGraph.addEdge(6,7);
         testGraph.addEdge(7,8);
         testGraph.addEdge(8,5);
+        System.out.println("Breadth First");
         testGraph.breadthFirst(0);
+        System.out.println("\nDepth First");
+        testGraph.depthFirst(0);
     }
 }
